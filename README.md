@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <body>
 <p>How many seconds would you like to set your alarm for?</p>
