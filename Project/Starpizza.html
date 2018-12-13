@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+ <head>
+  <link rel="stylesheet" type="text/css" href="star_pizza.css">
+</head> 
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+body {
+    background-color: #d64161;
+}
+
+  <div class="w3-panel w3-border w3-round-small">
+   <p>My borders are rounded (small).</p>
+  </div>
+  
+</style>
+			<h1>Star Pizza</h1>
+			
+			
+   <form action="" id="Pizza Form" onsubmit="return true;">
+   <fieldset>
+   <legend><h2>Make your Pizza!<h2></legend>
+    
+	
+	<label >Size Of the Pie</label>
+	
+	Personal Pizza - ($6) 
+    <input type="radio"  name="selectedPizza" value="Personal Pizza"
+    onclick="calculateTotal()" />
+    
+	Medium - ($10) 
+    <input type="radio"  name="selectedPizza" value="Medium"
+    onclick="calculateTotal()" />
+    
+	
+	<br>
+	Large - ($14)
+	<input type="radio"  name="selectedPizza" value="Large"
+    onclick="calculateTotal()" />
+	  
+  
+	Extra Large - ($16) 
+	<input type="radio"  name="selectedPizza" value="Extra"
+    onclick="calculateTotal()" />
+    
+	<br></br></p>
+  </div>
+	
+	<b>Extra Cheese ($3)
+	<input type="radio"  name="cheese" value="cheese"
+    onclick="calculateTotal()" /><b>
+	<br></br>
+	
+   <br>
+	<b>Plain Crust
+	<input type="radio"  name="crust" value="Plain Crust"
+    onclick="calculateTotal()" />
+	Garlic Butter Crust 
+	<input type="radio"  name="crust" value="Garlic Butter Crust"
+    onclick="calculateTotal()" />
+	Cheese Stuffed Crust ($3)
+	<input type="radio"  name="crust" value="Cheese Stuffed Crust"
+    onclick="calculateTotal()" />
+	Spicy Crust 
+	<input type="radio"  name="crust" value="Spicy Crust"
+    onclick="calculateTotal()" />
+	<br>House Special Crust 
+	<input type="radio"  name="crust" value="House Special Crust"
+    onclick="calculateTotal()" /></br>
+	
+	
+	</b>
+	</br>
+	
+	<br>
+	<b>Marinara Sauce
+	<input type="radio"  name="sauce" value="Marinara Sauce"
+    onclick="calculateTotal()" />
+	White Sauce
+	<input type="radio"  name="sauce" value="White Sauce"
+    onclick="calculateTotal()" />
+	Barbeque Sauce 
+	<input type="radio"  name="sauce" value="Barbeque Sauce"
+    onclick="calculateTotal()" />
+	No Sauce
+	<input type="radio"  name="sauce" value="No Sauce"
+    onclick="calculateTotal()" />
+	
+	
+	
+	</b>
+	
+	</br>
+	
+	
+	
+<br>
+    
+ <select name="Meats" id='Meats' size="4" multiple='multiple'>
+
+	<br>	
+			<p>
+			<option value="Meats">-Select (Max 3) -</option> 
+			<option value='1'>Pepperoni</option>
+			<option value='2'>Sausage</option>
+			<option value='3'>Canadian Bacon</option>
+			<option value='4'>Ground Beef</option>
+			<option value='5'>Anchovy</option>
+			<option value='5'>Chicken</option>
+			<option value='6'>Extra Meats ($1.00)</option></P>
+			</br>
+
+</br>
+
+
+
+
+   
+											<p>
+											<label class="inlinelabel" for='Tomatoes'>
+											Include Tomatoes($1)</label>
+											<input type="checkbox" id="Toppings"
+											name="Tomatoes" onclick="calculateTotal()" />
+											</p>
+										   
+											<div id="totalPrice"></div>
+											
+											<label class="inlinelabel" for='Onions'>
+											Include Onions($1)</label>
+											<input type="checkbox" id="Toppings"
+											name="Tomatoes" onclick="calculateTotal()" />
+											<div id="totalPrice"></div>
+											
+											
+											
+											
+											<label class="inlinelabel" for='Olives'>
+											Include Olives($1)</label>
+											<input type="checkbox" id="Toppings"
+											name="Olives" onclick="calculateTotal()" />
+										 
+											
+											<div id="totalPrice"></div>
+											
+											<label class="inlinelabel" for='Green Peppers'>
+											Include Green Peppers($1)</label>
+											<input type="checkbox" id="Toppings"
+											name="Green Peppers" onclick="calculateTotal()" />
+										 
+											
+											<div id="totalPrice"></div>
+											
+											<label class="inlinelabel" for='Mushrooms'>
+											Include Mushrooms($1)</label>
+											<input type="checkbox" id="Toppings"
+											name="Mushrooms" onclick="calculateTotal()" />
+										 
+											
+											<div id="totalPrice"></div>
+											
+											<label class="inlinelabel" for='Pineapple'>
+											Include Pineapple($1)</label>
+											<input type="checkbox" id="Toppings"
+											name="Pineapple" onclick="calculateTotal()" />
+										 
+											
+											<div id="totalPrice"></div>
+											
+											<label class="inlinelabel" for='Spinach'>
+											Include Spinach($1)</label>
+											<input type="checkbox" id="Toppings"
+											name="Spinach" onclick="calculateTotal()" />
+										 
+											
+											<div id="totalPrice"></div>
+											
+											<label class="inlinelabel" for='Jalapeno'>
+											Include Jalapeno($1)</label>
+											<input type="checkbox" id="Toppings"
+											name="Jalapeno" onclick="calculateTotal()" />
+										 
+											
+											<div id="totalPrice"></div>
+											</br>
+				
+	</p>
+ 
+
+
+<form action="" id="pizzaform">
+</form>
+
+
+
+
+
+
+
+
+</body>
+</html>

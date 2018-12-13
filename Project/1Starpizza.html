@@ -1,0 +1,149 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+
+<h1 style="color:Tomato;"><img src="images\starpizza.jpg" alt=StarPizza.jpg  style="width:916px;height:344px;"></h1>
+
+ <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/star_pizza.css">
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+
+</head>
+<body>
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+  <p><input name="Pizza1" type="hidden" id="Pizza1"></p>
+  <p><input name="Pizza2" type="hidden" id="Pizza2"></p>
+  <p><input name="Pizza3" type="hidden" id="Pizza3"></p>
+  </p>
+<p><b><strong>Size:</strong></p>
+  <p>
+    <input type="radio" name="size" value="medium" id="Size_Medium">
+     Medium 
+    <input type="radio" name="size" value"=large" id="large">
+    Large 
+    <input type="radio" name="size" value="Extra-Large"  id="Size_Extra-Large">
+    Extra-Large </p>
+  <p><b><strong>Meats:</strong>:<br>
+  
+
+    <input name="toppings" type="checkbox" id="pepperoni">
+    Pepperoni 
+	<input name="toppings" type="checkbox" id="sausage">
+    Sausage 
+    <input name="toppings" type="checkbox" id="Canadian Bacon">
+    Canadian Bacon
+    <input name="toppings" type="checkbox" id="Ground Beef">
+    Ground Beef </p>
+	<input name="toppings" type="checkbox" id="Anchovy">
+    Anchovy </p>
+	<input name="toppings" type="checkbox" id="Chicken">
+    Chicken </p>
+  <p>
+   &nbsp;&nbsp;&nbsp;&nbsp;
+
+	<p><b><strong>Toppings:</strong>:<br>
+	
+   <input name="tomatoes" type="checkbox" id="Toppings">
+    Tomatoes
+	<input name="toppings" type="checkbox" id="onions">
+    Onions 
+    <input name="toppings" type="checkbox" id="olives">
+    Olives 
+    <input name="toppings" type="checkbox"  id="Mushrooms">
+    Mushrooms 
+	<input name="toppings" type="checkbox"  id="Pineapple">
+    Pineapple 
+	<input name="toppings" type="checkbox"  id="Spinach">
+    Spinach 
+	<input name="toppings" type="checkbox"  id="Jalapeno">
+    Jalapeno  
+	
+	<p><strong>Sauces:</strong></p>
+  <p><b>
+    <input type="radio" name="size" value="marinara" id="Marinara">
+     Marinara 
+    <input type="radio" name="size" value"=white" id="White Sauce">
+    White Sauce 
+    <input type="radio" name="size" value="barbeque" id="Barbecue">
+    Barbeque 
+	<input type="radio" name="size" value="no sauce" id="no sauce">
+    No Sauce 
+	
+	</p><strong>&nbsp;</strong></p>
+  <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or Chooose Speciality Pizza 
+    <select name="Specialty">
+	<option>None</option>
+    <option>Pepper Steak</option>
+    <option>Barbecue Pizza</option>
+    </select>
+    </strong></p>
+  <p><strong>Crust:</strong></p>
+  <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    <select name="crust">
+      <option selected>Original</option>
+      <option>Plain Crust</option>
+      <option>Garlic Butter Crust</option>
+	  <option>Cheese Stuffed Crust</option>
+	  <option>Spicy Crust</option>
+	  <option>House Special Crust</option>
+    </select>
+  </p>
+  <input name="Pizza1" type="hidden" id="Pizza1" >
+  <input name="Pizza2" type="hidden" id="Pizza2">
+  <input name="Pizza3" type="hidden" id="Pizza3">
+  <p><strong> Special Instructions:</strong><br>
+    
+    <textarea ref="message"></textarea>
+  </p>
+  
+
+  <p><strong>BASE PIZZA PRICE BEFORE INGREDIENT MODIFICATIONS:</strong><strong> </strong></p>
+
+	<ul>
+		<li>Personal pizza = $6.00</li>
+		<li>Medium pizza = $10.00</li>
+		<li>Large pizza = $14.00</li>
+		<li>XLarge pizza = $16.00</li>
+		<li>Additional Meat items +$1.00 each additional meat items beyond the first complementary meat item</li>
+		<li>Additional Veggie items +$1.00 each additional veggie items beyond the first complementary veggie item</li>
+		<li>Extra Cheese,+$3.00 for any size pizza</li>
+		<li>Cheese Stuffed Crust,+$3.00. All other crusts are complementary</li>
+		
+		
+	</ul>  
+
+	
+
+	
+ <p> 
+    <input name="order" type="submit" value="Order Pizza"onClick="checkMandatory();">
+    <input name="clear" type="button" value="Clear_Form" onClick="Reset();">
+	<input name="save"  type="button" value="Save Pizza Details" onClick="SavePizzaDetails();">
+  </p>
+  </form>
+</p>
+</body>
+</html>
+
